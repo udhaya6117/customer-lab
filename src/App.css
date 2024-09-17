@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  padding: 10px 15px;
+  background-color: #41b494;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #09af80;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 500px;
+  max-width: 100%;
+}
+
+.box{
+  padding: 30px ;
+  flex-grow: 1;
+}
+.title-name label{
+  margin-bottom: 20px;
+}
+.spacethepara{
+  margin-top: 20px;
+}
+
+.popup h3 {
+  color: #fff;
+  background-color: #39aebc;
+  padding: 30px 10px;
+  margin: 0px;
+}
+
+.splited{
   display: flex;
   flex-direction: column;
+  height: 87%;
+}
+.button-box{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+}
+.addbtn{
+  text-decoration: underline;
+  color: #41b494;
+  margin-top: 20px;
+  background-color: transparent !important;
+  text-align: left;
+}
+
+
+input[type='text']{
+  
+  padding: 10px;
+  
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+select{
+  width: 100%;
+}
+.title-name{
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+}
+
+
+.dropdowns {
+  margin: 15px 0;
+}
+
+.dropdown {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:last-child {
+  background-color: #afd8db;
+}
+
+button:last-child:hover {
+  background-color: #afd8db;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
